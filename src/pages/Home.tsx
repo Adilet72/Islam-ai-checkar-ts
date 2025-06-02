@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { sendPrompt } from '../services/aiService';
 import { sendTelegramMessage } from '../services/telegramService';
+import type { FormData } from '../components/Form';
 import Form from '../components/Form';
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
     const [telegramStatus, setTelegramStatus] = useState('');
     const [loading, setLoading] = useState(false);
 
-    const handleFormSubmit = async (formData) => {
+    const handleFormSubmit = async (formData : FormData) => {
         setLoading(true);
         setAiResponse('');
         setTelegramStatus('');
