@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { sendPrompt } from '../services/aiService';
 import { sendTelegramMessage } from '../services/telegramService';
 import type { FormData } from '../components/Form';
