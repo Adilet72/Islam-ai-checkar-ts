@@ -11,7 +11,7 @@ ${msg}
 `;
 
     try {
-        const response = await fetch('https://dfaskjhkjhfdsjakhjkhjkhjk-production-324a.up.railway.app/api/v1/send/', {
+        const response = await fetch('http://islam-dev.up.railway.app/api/v1/send/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
